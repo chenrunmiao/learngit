@@ -1,13 +1,21 @@
-// 添加到远程库
+// 上传修改的文件
+git add .
+// 添加修改的文件的描述 
+git commit -m "test"
+// 创建分支
+git branch test
+// 切换分支
+git checkout test
+// 与远程分支相关联
 git remote add origin https://github.com/chenrunmiao/learngit.git
-// 第一次推送本地仓库到远程仓库
-git push -u origin master
-// 之后的推送
-git push origin master
-// 从远程分支获取最新版本并合并到本地
-git pull origin master
-// 从远程分支获取最新版本但不会合并
-git fetch origin master
+// 将分支上传
+git push origin test
+
+如果要将其他分支合并到主分支上
+git checkout master   // 切换到master
+git merge test   // 合并test到主分支上
+git push  // 推送上去
+
 
 关于分支的操作
 1. git branch  // 查看当前有哪些分支
