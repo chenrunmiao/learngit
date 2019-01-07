@@ -1,0 +1,27 @@
+// 添加到远程库
+git remote add origin https://github.com/chenrunmiao/learngit.git
+// 第一次推送本地仓库到远程仓库
+git push -u origin master
+// 之后的推送
+git push origin master
+// 从远程分支获取最新版本并合并到本地
+git pull origin master
+// 从远程分支获取最新版本但不会合并
+git fetch origin master
+
+关于分支的操作
+1. git branch  // 查看当前有哪些分支
+2. git branch test  // 新建test分支
+3. git checkout test  // 切换到test分支
+4. git checkout -b test  // 新建并且切换到该分支
+5. git branch -r  // 查看远程分支
+6. git branch -a // 查看本地和远程分支
+7. git branch -m test newtest
+8. git push origin --delete newtest // 删除远程分支
+9. git status // 查看当前分支为哪个
+10. 合并分支
+git checkout master  // 切换到master分支上
+git merge test // 将test分支合并到master分支上 
+11.git branch -D test // 强制删除分支test
+
+
